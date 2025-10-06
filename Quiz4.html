@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjerter og Hjertesygdomme</title>
+
+    <link rel="stylesheet" href="Css/Quiz4.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<main>
+
+    <!-- Baggrundsvideo sektion -->
+    <section class="BackgroundVID">
+    <video autoplay muted loop id="mainvideo" ></video>
+    </section>
+
+
+
+    <!-- Overskrifter og tekst -->
+    <section id="frontpagetxt">
+    <h1> Hvilke symptomer har kvinder typisk på hjertesygdomme? </h1>
+    </section>
+
+    <div id="textcontainer">
+    <h2>Vælg 3 symptomer du mener er korrekte</h2>
+    </div>
+
+    <section id="Answerboxes">
+
+        <div id="Answers">
+            <div class="box1" data-value="correct" onclick="checkanswer()"> <h3 >Kropssmerter</h3> </div>
+            <div class="box2" data-value="wrong" onclick="checkanswer()"> <h3 >Højt Blodtryk</h3> </div>
+            <div class="box3" data-value="wrong" onclick="checkanswer()"> <h3 >Stråling i arme</h3> </div>
+            <div class="box4" data-value="correct" onclick="checkanswer()"> <h3 >Svimmelhed</h3> </div>
+            <div class="box5" data-value="correct" onclick="checkanswer()"> <h3 >Ondt i brystet</h3> </div>
+        </div>
+
+        <section class="textfeedback">
+            
+
+        </section>
+
+    </section>
+
+    <section id="containerbutton">
+    <section id="boxcon">
+     <a href="end.html"> <div id="box1"></div> </a>
+    </section>
+    <a id="udforsk" href="end.html">
+
+        <h2> Fortsæt </h2>
+        <img src="Images/Arrow.png" alt="" id="arrow1" href="end.html">  
+    </a>
+    </section>
+</main>
+
+
+<script src="Javascript/jsquiz4.js"> </script>
+</body>
+</html>

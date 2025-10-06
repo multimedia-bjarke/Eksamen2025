@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Video Properties */
+#mainvideo{
+    margin-top: -1.8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    display: block;
+ 
+}
+
+#Videoplay{
+    margin-top: -1.8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    display: none;
+}
+
+
+body{
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  font-style: normal;
+  color: white;
+}
+
+/* Text Properties */
+#frontpagetxt{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  text-align: left;
+  margin-top: -63%;
+}
+
+#CPRgraphic{
+  max-width: 35%;
+  margin-left: 65%;
+  margin-top: -13%;
+  position: absolute;
+}
+
+
+
+#frontpagetxt h1{
+  font-size: 40px;
+  margin-bottom: 8%;
+}
+
+#frontpagetxt h2{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: -2%;
+}
+
+#textcontainer{
+  margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+/* Styling af svarne */
+
+#Answerboxes{
+  margin-left: 5%;
+}
+
+#rowbox{
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+#Answers{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box1{
+  background-color: rgb(255, 255, 255);
+  border-radius: 70px;
+  width: 240px;
+  height: 70px;
+}
+
+.box2{
+  background-color: rgb(255, 255, 255);
+  border-radius: 70px;
+  width: 400px;
+  height: 70px;
+}
+
+
+.box3{
+  background-color: rgb(255, 255, 255);
+  border-radius: 70px;
+  width: 400px;
+  height: 70px;
+}
+
+
+.correctstyle{
+  background-color: rgb(30, 255, 0);
+  border-radius: 70px;
+  width: 240px;
+  height: 70px;
+}
+
+.wrongstyle{
+  background-color: rgb(255, 0, 0);
+  border-radius: 70px;
+  width: 240px;
+  height: 70px;
+}
+
+
+
+#arrowpointer{
+  margin-top: 7%;
+  margin-left: 6%;
+}
+
+#arrow3{
+  transform: scale(0.8);
+}
+/* Fortsæt knappen i hjørnet */
+#udforsk{
+display: flex;
+gap: 20px;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: white;
+font-size: 18px;
+margin-top: -15%;
+}
+
+#arrow1{
+  width: 10%;
+}
+
+#box1{
+  background-color: #9A0003;
+  border-radius: 70px;
+  width: 240px;
+  height: 70px;
+}
+
+#boxcon{
+  display: flex;
+  justify-content: center;
+}
+
+#containerbutton{
+  margin-top: 8%;
+  margin-left: 75%;
+  opacity: 0%;
+}
+
+
+
+
+
+
+
+
+h3{
+    margin-top: 8%;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.box2 h3{
+  margin-top: 5.8%;
+}
+
+.box3 h3{
+  margin-top: 5.8%;
+}
+
+
+
+/* Forfra knap*/
+
+#reset{
+    margin-left: 3%;
+    margin-top: -52%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0%;
+
+}
+
+h2 a{
+    color: white;
+    text-decoration: none;
+    margin-left: -55%;
+}
+
+#Backspace{
+    width: 55%;
+}
+

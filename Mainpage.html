@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjerter og Hjertesygdomme</title>
+
+    <link rel="stylesheet" href="Css/Mainpage.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<main>
+    <!-- Baggrundsvideo sektion -->
+    <section class="BackgroundVID">
+    <video autoplay muted loop id="mainvideo"></video>
+    </section>
+
+
+
+    <!-- Overskrifter og tekst -->
+    <section id="frontpagetxt">
+    <h1> Hjertet og Hjertesygdomme </h1>
+        <h2>En kort gennemgang af hjertet, studiet af <br> hjertet inden for medicin og forskelle <br> mellem mænd og kvinder </h2>
+    </section>
+
+
+    <section id="time">
+        <img src="Images/Clock.png" alt="clock" id="clock">
+        <h3> 5 MIN </h3>
+    </section>
+
+
+    <!-- Sort box til knappen -->
+    <section id="boxcon">
+     <a onclick="playvideo()"> <div id="box1" onclick="playvideo()"></div> </a>
+    </section>
+
+
+
+    <!-- Knap til video begyndelse -->
+    <a id="udforsk" onclick="playvideo()"  >
+
+        <h2 onclick="playvideo()">Udforsk</h2>
+        <img src="Images/Arrow.png" alt="" id="arrow1" onclick="playvideo()">  
+    </a>
+
+
+    <!-- Hjertebilleder -->
+    <section id="heart1con">
+        <img src="Images/Herat.png" alt="" id="heart1">
+    </section>
+
+    <section id="heart2con">
+        <img src="Images/Herat.png" alt="" id="heart2">
+    </section>
+
+
+
+ 
+
+
+
+
+
+
+
+</main>
+    <!-- Video 1 (er sjkult og pauset) -->
+   <section id="Videoplaybox">
+    <video paused id="Videoplay"></video>
+    </section>
+
+<script src="Javascript/Js.js"> </script>
+</body>
+</html>

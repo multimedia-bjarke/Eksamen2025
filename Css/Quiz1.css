@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  color: var(--white);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+}
+
+/*   <!---------------- Background video ---------------->  */
+
+#mainvideo{
+    margin-top: -1.8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    display: block;
+ 
+}
+
+#Videoplay{
+    margin-top: -1.8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    display: none;
+}
+
+/* <!---------------- Top Nav ----------------> */
+header {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.nav-left img, .nav-right img {
+  margin-right: 1rem;
+}
+
+/*     <!---------------- Question ----------------> */
+.quiz-question {
+  position: absolute;
+  top: 16vh;
+  left: 0;
+  width: 100%;
+  height: 20vh; 
+  padding: 0 80px;  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  backdrop-filter: blur(0px);
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 50%,
+    black 50%,
+    transparent 80%
+  );
+}
+
+.quiz-question h3 { 
+  font-size: var(--h3);
+}
+
+/*     <!---------------- Illustration ----------------> */
+.Quiz1-illustration {
+  position: absolute;
+  top: 64vh; 
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.Quiz1-illustration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+}
+
+.heart-left {
+  height: 300px;
+  width: auto;
+}
+
+.heart-right {
+  height: 400px;
+  width: auto;
+}
+
+/*     <!---------------- Slider ----------------> */
+.slider-section {
+  position: absolute;
+  top: 50vh; 
+  left: 0;
+  width: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.slider-max {
+  color: var(--white);
+  font-size: var(--body);
+}
+
+.slider-min {
+  color: var(--white);
+  font-size: var(--body);
+}
+
+.slider-rail {
+  flex: 1;
+  height: 10px;
+  background-color: var(--red-slider);
+  border-radius: 10px;
+  margin: 0 2rem;
+  position: relative;
+}
+
+.slider-dot {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: width 0.1s ease, height 0.1s ease;
+}
+
+.dot-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+}
+
+.slider-dot.active {
+  width: 54px; 
+  height: 54px;
+}
+
+.bubble-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: var(--h5);
+  white-space: nowrap;
+}
+/*     <!---------------- Slider text ----------------> */
+.slider-explanation-text {
+  height: 5vh;  
+  color: var(--white);
+  font-size: var(--body);
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  text-align: center;
+  backdrop-filter: blur(0px);
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 50%,
+    black 50%,
+    transparent 80%
+  );
+}
+
+/*         <!---------------- Bottom section ---------------->  */
+.Bottom-section {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.container {
+    padding: 0 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Next {
+    display: inline-flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 76px;
+    background: var(--red-button);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: var(--body);
+    box-sizing: border-box;
+    align-self: flex-end;
+    margin-bottom: 34px;
+    z-index: 2;
+}
+
+.Next img {
+    width: 37px;
+    height: 37px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+

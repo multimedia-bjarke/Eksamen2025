@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjerter og Hjertesygdomme</title>
+
+    <link rel="stylesheet" href="Css/Quiz2.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+
+
+
+<main>
+
+
+        <!-- Baggrundsvideo sektion -->
+<section class="BackgroundVID">
+    <video autoplay muted loop id="mainvideo"></video>
+</section>
+
+    <!-- Overskrifter og tekst -->
+    <section id="frontpagetxt">
+    <h1> Hvor mange danskere dør af hjertekarsygdomme? </h1>
+
+    <h2>Tryk på det svar du tror er rigtigt</h2>
+    </section>
+
+
+    <!-- Sektion med de forskellige svarmuligheder -->
+    <section id="Answergraphic">
+
+        <div id="answer1div">
+        <label> <img src="Images/9percent.png" id="IMAGEANS1" onclick="checkanswer(event)" data-value="wrong1"></label>
+            <div id="box1" onclick="checkanswer(event)" data-value="wrong1"> <h3 data-value="wrong">9%</h3></div>
+
+
+        </div>
+
+        <div id="answer2div">
+        <label> <img src="Images/25percent.png" id="IMAGEANS2" onclick="checkanswer(event)" data-value="correct"></label>
+            <div id="box2" onclick="checkanswer(event)" data-value="correct"> <h3 data-value="correct">25%</h3> </div>
+        </div>
+
+        <div id="answer3div">
+        <label> <img src="Images/33percent.png" id="IMAGEANS3" onclick="checkanswer(event)" data-value="wrong2"></label>
+            <div id="box3" onclick="checkanswer(event)" data-value="wrong2" > <h3 data-value="wrong">33%</h3> </div>
+        </div>
+
+
+    </section>
+
+        <!-- Forfra header (ref til index fil) -->
+        <div id="reset">
+        <a href="index.html"> <img src="Images/Backspace.png" id="Backspace"> </a>
+        <h2> <a href="index.html"> Forfra </a> </h2>
+        </div>
+
+
+        <!-- Section hvor javascript kan indsætte korrekt eller forkert svartekst -->
+    <section id="correctanswertext">
+
+    </section>
+
+
+
+     <section id="containerbutton11">
+    <section id="boxcon11">
+     <a onclick="playvideo()"> <div id="box11" onclick="playvideo()"></div> </a>
+    </section>
+    <a id="udforsk2" onclick="playvideo()">
+
+        <h2> Fortsæt </h2>
+        <img src="Images/Arrow.png" alt="" id="arrow1" onclick="playvideo()" >  
+    </a>
+    </section>
+
+
+
+
+
+</main>
+
+    <!-- Video 2, er skjult og pauset -->
+   <section id="Videoplaybox">
+    <video paused id="Videoplay"></video>
+    </section>
+
+
+<script src="Javascript/jsquiz2.js"> </script>
+</body>
+</html>

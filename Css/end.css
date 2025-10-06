@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* Video Properties */
+#mainvideo{
+    margin-top: -1.8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+#Video1 , #Video2, #Video3, #Video4{
+    margin-top: -1.8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+
+
+
+
+
+/* Javascript Classes */
+
+
+
+
+
+
+body{
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: white;
+}
+
+/* Text Properties */
+#frontpagetxt{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -63%;
+}
+
+
+#frontpagetxt h1{
+  font-size: 93px;
+  margin-bottom: 2%;
+}
+
+#frontpagetxt h2{
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+/* Udforsk knap */
+#udforsk{
+display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: white;
+font-size: 18px;
+margin-top: -4.1%;
+}
+
+#arrow1{
+  width: 3%;
+}
+/* Sort Baggrund til knappen */
+#box1{
+  background-color: black;
+  border-radius: 70px;
+  width: 240px;
+  height: 70px;
+}
+
+#boxcon{
+  display: flex;
+  justify-content: center;
+}
+
+/* Heart.png styling og positioning  */
+#heart1{
+  margin-left: 64%;
+  margin-top: -25%;
+  width: 33%;
+}
+
+
+#heart2{
+  margin-left: -40%;
+  margin-top: -61%;
+  position: fixed;
+  transform: scaleX(-1) rotate(-2deg);
+  filter: blur(4px);
+  width: 80%;
+}
+
+#backspace2{
+    margin-top: 12%;
+}
+
+body{
+  overflow: hidden;
+}
+

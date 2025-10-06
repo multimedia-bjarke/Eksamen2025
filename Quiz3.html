@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjerter og Hjertesygdomme</title>
+
+    <link rel="stylesheet" href="Css/Quiz3.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<main>
+
+    <!-- Baggrundsvideo sektion -->
+    <section class="BackgroundVID">
+    <video autoplay muted loop id="mainvideo" ></video>
+    </section>
+
+
+
+    <!-- Overskrifter og tekst -->
+    <section id="frontpagetxt">
+    <h1> Hvad er sandsynlighedsforskellen på en mand <br> og en kvinde får CPR i liv eller døds situationer? </h1>
+    </section>
+
+    <section id="CPRgraph">
+        <img src="Images/CPRgraphic.png" id="CPRgraphic">
+    </section>
+
+
+    <div id="textcontainer">
+    <h2>Tryk på det svar, du tror er korrekt</h2>
+    </div>
+
+    <section id="Answerboxes">
+
+        <div id="Answers">
+            <section id="rowbox">
+            <div class="box1" data-value="wrong" onclick="checkanswer()"> <h3 >Ingen forskel</h3> </div>
+            <div class="box2" data-value="correct" onclick="checkanswer()"> <h3 >Kvinder har lavere sandsynlighed</h3> </div>
+            </section>
+            <div class="box3" data-value="wrong" onclick="checkanswer()"> <h3 >Mænd har lavere sandsynlighed</h3> </div>
+        </div>
+
+        <section class="textfeedback">
+            
+
+        </section>
+
+    </section>
+
+
+
+            <!-- Forfra header (ref til index fil) -->
+        <div id="reset">
+        <a href="index.html"> <img src="Images/Backspace.png" id="Backspace"> </a>
+        <h2> <a href="index.html"> Forfra </a> </h2>
+        </div>
+
+
+
+
+    <section id="containerbutton">
+    <section id="boxcon">
+     <a onclick="playvideo()"> <div id="box1" onclick="playvideo()"></div> </a>
+    </section>
+    <a id="udforsk" onclick="playvideo()">
+
+        <h2> Fortsæt </h2>
+        <img src="Images/Arrow.png" alt="" id="arrow1" onclick="playvideo()">  
+    </a>
+    </section>
+</main>
+
+
+    <!-- Video 2, er skjult og pauset -->
+   <section id="Videoplaybox">
+    <video paused id="Videoplay"></video>
+    </section>
+
+
+
+<script src="Javascript/jsquiz3.js"> </script>
+</body>
+</html>
